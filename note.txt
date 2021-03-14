@@ -27,3 +27,15 @@ git add 会将在工作区的改动提交的暂存区
 
 # 将文件从仓库去commit入仓库
 git commit -m "说明" 说明内容尽量别为空
+
+# 版本退回
+# 注意版本的穿梭是针对每次commit的，即每次穿梭的结果是某次commit提交后的版本
+每次commit都会有log记录
+git reflog可查看所有历史记录
+git log可查看当前版本以及其以前的记录，以后的就不能看了
+git log --pretty=oneline显示信息更简洁
+
+	# 版本退回与恢复实现
+		git reset --hard HEAD^  向前退回一次
+		git reset --hard HEAD^  向前退回两次
+		git reset --hard id(需要输入大概5位才行) 版本转为指定id的版本
