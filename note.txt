@@ -7,7 +7,23 @@ git config --list
 # 创建仓库
 git init
 
-# 让git跟踪文件
+# 四个区间名称及含义
+1. workspace 工作区
+	add之前文件位于工作区，就是本地目录下，未交给git管理之前，但是在该仓库路径下的区
+2. index/stage 暂存区
+	add之后为暂存区，可通过git rm --cached 从暂存区删除
+3. Repository 仓库去（本地仓库）
+	commit提交
+
+# 让git跟踪文件,将文件放到暂存区
 git add *
-# 让git删除跟踪的文件
+# 让git删除跟踪的文件，将文件从暂存区删除
 git rm --cached *
+
+# 在add到暂存区之后，假如在工作区对暂存区的内容进行了修改，在git status查看状态时，会发现该文件提示有修改,输入
+git diff 文件名，可以查看该文件在工作区和暂存区的区别
+git restore 会使工作区的该文件恢复成上次提交到暂存区的状态，即在工作区的修改被撤销了。
+git add 会将在工作区的改动提交的暂存区
+
+# 将文件从仓库去commit入仓库
+git commit -m "说明" 说明内容尽量别为空
