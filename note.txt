@@ -11,7 +11,7 @@ git init
 1. workspace 工作区
 	add之前文件位于工作区，就是本地目录下，未交给git管理之前，但是在该仓库路径下的区
 2. index/stage 暂存区
-	add之后为暂存区，可通过git rm --cached 从暂存区删除
+	add之后为暂存区
 3. Repository 仓库去（本地仓库）
 	commit提交
 
