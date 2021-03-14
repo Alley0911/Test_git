@@ -42,3 +42,19 @@ git log --pretty=oneline显示信息更简洁
 
 # 删除文件
 文件进行提交后，假如删除了也需要再重新提交一次才行，这样以后版本穿越还能穿越到未删除前的状态
+
+# 分支管理
+查看分支
+	git branch
+创建分支
+	git branch name
+切换分支
+	git switch name
+	git checkout name
+创建+切换分支
+	git branch -b name
+	gti switch -c name
+合并某分支到当前分支
+	git merge name
+删除分支
+	gti branch -d name
