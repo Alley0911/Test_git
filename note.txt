@@ -39,3 +39,6 @@ git log --pretty=oneline显示信息更简洁
 		git reset --hard HEAD^  向前退回一次
 		git reset --hard HEAD^  向前退回两次
 		git reset --hard id(需要输入大概5位才行) 版本转为指定id的版本
+
+# 删除文件
+文件进行提交后，假如删除了也需要再重新提交一次才行，这样以后版本穿越还能穿越到未删除前的状态
