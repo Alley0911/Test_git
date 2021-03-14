@@ -1,0 +1,13 @@
+# 因为git是分布式版本控制系统，所以每个机器都需要有个识别信息的id
+git config --global user.name "Alley"
+git config --global user.email "1030184860@qq.com"
+# 查看自己的配置
+git config --list
+
+# 创建仓库
+git init
+
+# 让git跟踪文件
+git add *
+# 让git删除跟踪的文件
+git rm --cached *
