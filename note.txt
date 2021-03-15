@@ -76,6 +76,8 @@ git remote -v
 
 # 提交到远程库
 git push -u origin master
+第一次push的时候需要上面这个完整代码之后使用
+git push 即可
 # ssh连接
 注意使用ssh连接与http连接的地址不用
 
