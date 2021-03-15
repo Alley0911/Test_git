@@ -58,3 +58,21 @@ git log --pretty=oneline显示信息更简洁
 	git merge name
 删除分支
 	gti branch -d name
+
+# 解决github打不开的问题
+将解决方法收藏到了谷歌的收藏栏，通过修改hosts实现
+windows
+	修改c:/windows32/driver/etc/hosts
+	使用记事本打开，打开前给你使用的用户添加修改权限
+linux
+	sudo vim /etc/hosts
+
+# 添加远程库，使用origin与特定远程库关联
+git remote add origin 地址
+# 删除远程库
+git remote rm origin
+# 查看远程库
+git remote -v
+
+# 提交到远程库
+git push -u origin master
