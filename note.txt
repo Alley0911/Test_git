@@ -12,7 +12,7 @@ git init
 	add之前文件位于工作区，就是本地目录下，未交给git管理之前，但是在该仓库路径下的区
 2. index/stage 暂存区
 	add之后为暂存区
-3. Repository 仓库去（本地仓库）
+3. Repository 仓库区（本地仓库）
 	commit提交
 
 # 让git跟踪文件,将文件放到暂存区
@@ -25,6 +25,8 @@ git diff 文件名，可以查看该文件在工作区和暂存区的区别
 git restore 会使工作区的该文件恢复成上次提交到暂存区的状态，即在工作区的修改被撤销了。
 git add 会将在工作区的改动提交的暂存区
 
+# 将添加到暂存区的修改撤销
+git restore --staged filename
 # 将文件从仓库去commit入仓库
 git commit -m "说明" 说明内容尽量别为空
 
